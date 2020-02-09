@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'finchart',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +65,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'finchart.context_processors.company_list',
-                'django.contrib.humanize',
             ],
 
         },
