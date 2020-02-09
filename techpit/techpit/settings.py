@@ -64,10 +64,14 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'finchart.context_processors.company_list',
+                'django.contrib.humanize',
             ],
+
         },
     },
 ]
+
+NUMBER_GROUPING = 3
 
 WSGI_APPLICATION = 'techpit.wsgi.application'
 
