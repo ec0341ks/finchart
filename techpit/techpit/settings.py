@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'finchart',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -63,10 +64,14 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'finchart.context_processors.company_list',
             ],
+
         },
     },
 ]
+
+NUMBER_GROUPING = 3
 
 WSGI_APPLICATION = 'techpit.wsgi.application'
 
