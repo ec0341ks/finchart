@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
-urlpatterns = {
+app_name='finchart'
+
+urlpatterns = [
     path('', views.IndexTemplateView.as_view(), name='index')
-}
+]
