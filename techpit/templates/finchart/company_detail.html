@@ -196,7 +196,6 @@
                             var data_sales = [ {% for item in fstatement_list reversed %} {{item.pl_gross_sales}}, {% endfor %} ];
                             var data_gross_profit = [ {% for item in fstatement_list reversed %} {{item.pl_gross_profit}}, {% endfor %} ];
                             var data_operating_profit = [ {% for item in fstatement_list reversed %} {{item.pl_operating_profit}}, {% endfor %} ];
-
                             var data_total_assets = [ {% for item in fstatement_list reversed %} {{item.bs_total_assets }}, {% endfor %} ];
                             var data_fixed_liabilities = [ {% for item in fstatement_list reversed %} {{item.bs_fixed_liabilities }}, {% endfor %} ];
                             var data_net_assets = [ {% for item in fstatement_list reversed %} {{item.bs_net_assets }}, {% endfor %} ];
@@ -230,9 +229,10 @@
                                         fill: false,
                                         lineTension: 0,
                                         backgroundColor:'rgba(255, 206, 86, 0.2)',
-                                  s      borderColor: 'rgba(255, 206, 86, 1)',
+                                        borderColor: 'rgba(255, 206, 86, 1)',
                                         borderWidth: 2,
-                                    },{
+                                    },
+                                    {
                                         label: '総資産',
                                         data: data_total_assets,
                                         backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -261,7 +261,7 @@
                 </div><!-- class card -->
             </div><!-- col -->
         </div><!-- row -->
-    </div><!-- container-fluid -->
+    </div>
 </section>
 <br><br>
 {% endblock %}
